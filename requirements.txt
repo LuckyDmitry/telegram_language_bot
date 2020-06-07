@@ -1,3 +1,6 @@
 python-telegram-bot
 requests
 urllib2
+pymongo
+googletrans
+telegram

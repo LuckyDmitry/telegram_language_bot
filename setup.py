@@ -1,0 +1,2 @@
+TOKEN = '1222571856:AAEn4RBK6W3V0-2P4uZ2P2T0EmPDN_1HYvE'
+PROXY = 'https://telegg.ru/orig/bot'

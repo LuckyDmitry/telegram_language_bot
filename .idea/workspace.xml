@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="978206d9-8a6c-42cd-b454-06e67a3dc45d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/language.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/language.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot_commands.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/key_boards.py" beforeDir="false" afterPath="$PROJECT_DIR$/key_boards.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/words.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/process_words.py" beforeDir="false" afterPath="$PROJECT_DIR$/process_words.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            <state relative-caret-position="100">
+              <caret line="29" column="67" lean-forward="true" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -31,11 +29,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="10" column="73" lean-forward="true" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/key_boards.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state>
+              <caret column="9" selection-start-column="9" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -43,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/process_words.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="540">
+              <caret line="29" column="71" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -69,14 +76,15 @@
       <list>
         <option value="$PROJECT_DIR$/../course_chat_bot/chat_bot_template.py" />
         <option value="$PROJECT_DIR$/bot_commands.py" />
-        <option value="$PROJECT_DIR$/data_base.py" />
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/key_board.py" />
         <option value="C:/Python/interview_q.py" />
-        <option value="$PROJECT_DIR$/process_words.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/key_boards.py" />
+        <option value="$PROJECT_DIR$/tests/test_word_handler.py" />
+        <option value="$PROJECT_DIR$/data_base.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/process_words.py" />
       </list>
     </option>
   </component>
@@ -86,11 +94,15 @@
     <option name="width" value="1750" />
     <option name="height" value="980" />
   </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -102,7 +114,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -123,7 +134,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.main">
-    <configuration name="interview_q" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="data_base" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="language" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -131,11 +142,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="C:/Python" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:/Python/interview_q.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_base.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -165,10 +176,55 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests for test_word_handler.TestWordHandler.test_get_translate" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="language" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_word_handler.TestWordHandler.test_get_translate&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_word_handler.TestWordHandler.test_set_word" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="language" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_word_handler.TestWordHandler.test_set_word&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_word_handler.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="language" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_word_handler.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.interview_q" />
+        <item itemvalue="Python.data_base" />
+        <item itemvalue="Python tests.Unittests for test_word_handler.TestWordHandler.test_get_translate" />
+        <item itemvalue="Python tests.Unittests in test_word_handler.py" />
+        <item itemvalue="Python tests.Unittests for test_word_handler.TestWordHandler.test_set_word" />
       </list>
     </recent_temporary>
   </component>
@@ -185,15 +241,47 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_for_test_word_handler_TestWordHandler_test_set_word - 2020.06.08 at 13h 56m 31s.xml">
+      <configuration name="Unittests for test_word_handler.TestWordHandler.test_set_word" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_word_handler_py - 2020.06.08 at 13h 59m 15s.xml">
+      <configuration name="Unittests in test_word_handler.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_word_handler_TestWordHandler_test_get_translate - 2020.06.08 at 13h 59m 55s.xml">
+      <configuration name="Unittests for test_word_handler.TestWordHandler.test_get_translate" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_word_handler_TestWordHandler_test_get_translate - 2020.06.08 at 14h 00m 18s.xml">
+      <configuration name="Unittests for test_word_handler.TestWordHandler.test_get_translate" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_word_handler_TestWordHandler_test_get_translate - 2020.06.08 at 14h 01m 15s.xml">
+      <configuration name="Unittests for test_word_handler.TestWordHandler.test_get_translate" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_word_handler_TestWordHandler_test_get_translate - 2020.06.08 at 14h 02m 01s.xml">
+      <configuration name="Unittests for test_word_handler.TestWordHandler.test_get_translate" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_word_handler_TestWordHandler_test_get_translate - 2020.06.08 at 14h 02m 17s.xml">
+      <configuration name="Unittests for test_word_handler.TestWordHandler.test_get_translate" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_word_handler_TestWordHandler_test_get_translate - 2020.06.08 at 14h 02m 32s.xml">
+      <configuration name="Unittests for test_word_handler.TestWordHandler.test_get_translate" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_word_handler_TestWordHandler_test_get_translate - 2020.06.08 at 14h 02m 44s.xml">
+      <configuration name="Unittests for test_word_handler.TestWordHandler.test_get_translate" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_word_handler_TestWordHandler_test_get_translate - 2020.06.08 at 14h 03m 23s.xml">
+      <configuration name="Unittests for test_word_handler.TestWordHandler.test_get_translate" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="36" width="1550" height="835" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966975" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32954547" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.234375" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -210,9 +298,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../course_chat_bot/chat_bot_template.py" />
     <entry file="file://$PROJECT_DIR$/../course_chat_bot/setup.py" />
-    <entry file="file://$PROJECT_DIR$/bot_commands.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../11-command/database.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
@@ -252,37 +337,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_base.py">
+    <entry file="file://$PROJECT_DIR$/bot_commands.py" />
+    <entry file="file://$PROJECT_DIR$/tests/test_word_handler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="320">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/process_words.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="540">
+          <caret line="29" column="71" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/key_boards.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/key_boards.py">
+    <entry file="file://$PROJECT_DIR$/data_base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="200">
+          <caret line="10" column="73" lean-forward="true" selection-start-line="10" selection-start-column="73" selection-end-line="10" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="29" column="67" lean-forward="true" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

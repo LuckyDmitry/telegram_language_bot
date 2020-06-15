@@ -6,6 +6,8 @@ from telegram.ext import CallbackContext, Updater, CommandHandler, MessageHandle
 from process_words import WordHandler
 from key_boards import keyboard_part_of_speech
 
+from data_base import DataBase
+
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
@@ -31,12 +33,18 @@ def help_command(update: Update, context: CallbackContext) -> None:
 
 
 def word_handle(update: Update, context: CallbackContext) -> None:
-    word = str(update.message.text).lower().strip()
-    handler.set_word(word=word)
-    update.message.reply_text(handler.get_translate())
-    global message_id
-    message_id = update.message.reply_text(text='Please choose:',
-                                           reply_markup=keyboard_part_of_speech())
+    initial_word = str(update.message.text).lower().strip()
+    handler.set_word(word=initial_word)
+    try:
+        result_word = handler.get_translate()
+        #base = DataBase()
+        #base.add_word(update.effective_message.chat_id, initial_word, result_word)
+    except ValueError as value_error:
+        update.message.reply_text(text=repr(value_error))
+    else:
+        global message_id
+        message_id = update.message.reply_text(text=result_word,
+                                               reply_markup=keyboard_part_of_speech())
 
 
 def button_handler(update: Update, context=CallbackContext):  # Gets callback_data from the pushed button
@@ -46,15 +54,24 @@ def button_handler(update: Update, context=CallbackContext):  # Gets callback_da
         bot.delete_message(chat_id=update.effective_message.chat_id,
                            message_id=message_id.message_id)
     else:
-        list_of_meanings = handler.get_meaning(button)
-        if not list_of_meanings[0] == '':
-            ans = ''
-            for meaning, idx in zip(list_of_meanings, range(1, 6)):
-                ans += str(idx) + ') ' + meaning + '\n'
-        else:
-            ans = 'Meaning for this part of speech doesn\'t exist'
-
+        try:
+            list_of_meanings = handler.get_meaning(button)
+            if not list_of_meanings[0] == '':
+                ans = ''
+                for meaning, idx in zip(list_of_meanings, range(1, 6)):
+                    ans += str(idx) + ') ' + meaning + '\n'
+            else:
+                ans = 'Meaning for this part of speech doesn\'t exist'
+        except ValueError as value_error:
+            ans = repr(value_error)
+        except ConnectionError as conn_err:
+            ans = repr(conn_err)
         bot.send_message(text=ans, chat_id=update.effective_message.chat_id)
+
+
+def add_in_vocabulary(user_id, initial_word: str, result_word: str):
+    base = DataBase()
+    base.add_word(user_id, initial_word, result_word)
 
 
 def main():
